@@ -69,12 +69,67 @@ input {
 .search-house-input {
   width: 70%;
   float: left;
-  height: 50px;
-  border: 0 none transparent;
 }
 
 .search-house {
   margin: 16px auto 16px auto;
+}
+
+.app-grid {
+  color: #555555;
+  padding: 80px 0 80px 0;
+  background-color: lightgray;
+  background-image: url(//d29k9pp6ge5sv1.cloudfront.net/searchStaticProducao/939/img/banner-iphone.png), url(//d29k9pp6ge5sv1.cloudfront.net/searchStaticProducao/939/img/banner-android.png);
+  background-repeat: no-repeat;
+  background-position: 340px 20px, 200px 0;
+  background-size: 167px 324px, 180px 325px;
+}
+
+.app-grid h1 {
+  text-align: left;
+}
+.app-grid h2 {
+  text-align: left;
+}
+
+.android-image {
+    width: 180px;
+    height: 325px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.iphone-image {
+    width: 167px;
+    height: 324px;
+    margin-left: -25px;
+    margin-top: 15px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.apple-image {
+  background-image: url("http://d29k9pp6ge5sv1.cloudfront.net/searchStaticProducao/939/img/bagde_best_apple.png");
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 290px;
+  background-size: 80% 80%;
+}
+
+.request-app > * {
+  height: 40px;
+}
+
+.request-app-input {
+  width: 60%;
+}
+
+.request-app-button {
+  padding: 12px;
+  margin-left: 2px;
+  height: 20px;
+  margin: 0;
+  border: 1px solid darkgray;
 }
 
 #App {
@@ -85,5 +140,14 @@ input {
 @media (max-width: 418px) {
   .search-house-input {
     width: 58%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .app-grid {
+    color: #555555;
+    padding: 80px 0 80px 0;
+    background-color: lightgray;
+    background-image: none;
   }
 }

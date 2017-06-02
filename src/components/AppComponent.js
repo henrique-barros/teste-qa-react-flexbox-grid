@@ -34,10 +34,10 @@ export default class AppComponent extends Component {
             <Row center="md" center="xs">
               <Col lg={6} lgOffset={3} md={6} mdOffset={3} xs={12} sm={12}>
                 <div>
-                <form className="search-house">
-                  <input className="search-house-input" placeholder="Busque por bairro, rua ou código do imóvel" type="text"></input>
-                  <div className="search-house-button"></div>
-                </form>
+                  <form className="search-house">
+                    <input className="search-house-input" placeholder="Busque por bairro, rua ou código do imóvel" type="text"></input>
+                    <a className="search-house-button"></a>
+                  </form>
                 </div>
               </Col>
               <Col lg={2} md={2} xs={4} sm={4}>
@@ -53,12 +53,25 @@ export default class AppComponent extends Component {
         <Grid fluid className="app-grid">
           <Row>
             <Col lg={6} md={6} lgOffset={6} mdOffset={6} sm={12} xs={12}>
-              <div>Melhor App</div>
+              <div className="apple-image"></div>
             </Col>
           </Row>
-          <Row className="rent">
-            <Col lg={6} lgOffset={3}>
-              <h1>O jeito fácil de alugar e morar</h1>
+          <Row>
+            <Col lg={6} md={6} lgOffset={6} mdOffset={6} sm={12} xs={12}>
+              <h1>Baixe o aplicativo QuintoAndar!</h1>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={6} md={6} lgOffset={6} mdOffset={6} sm={12} xs={12}>
+              <h2>Receba o link para download no seu celular:</h2>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={6} md={6} lgOffset={6} mdOffset={6} sm={12} xs={12}>
+              <form className="request-app">
+                <input className="request-app-input" placeholder="Insira seu número" type="tel"></input>
+                <a className="request-app-button">Enviar link!</a>
+              </form>
             </Col>
           </Row>
         </Grid>

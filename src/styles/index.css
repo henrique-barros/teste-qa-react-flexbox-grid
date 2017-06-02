@@ -28,8 +28,14 @@ form {
   width: 100%;
 }
 
+a {
+  cursor: pointer;
+}
+
 input {
   padding: 0 8px 0 8px;
+  border: 0 none transparent;
+  height: 50px;
 }
 
 
