@@ -123,7 +123,7 @@ export default class AppComponent extends Component {
             </Col>
           </Row>
         </Grid>
-        <Grid className="grid-midia">
+        <Grid fluid className="grid-midia">
           <Row>
             <Col xs={12} sm={12} md={12} lg={12}>
               <h2>O quinto andar na mídia</h2>
@@ -156,7 +156,7 @@ export default class AppComponent extends Component {
             </Col>
           </Row>
         </Grid>
-        <Grid className="grid-navegacao">
+        <Grid fluid className="grid-navegacao">
           <Row>
             <Col lg={2} md={2} lgOffset={4}>
               <ul className="naveg">
@@ -245,7 +245,7 @@ export default class AppComponent extends Component {
             </Col>
           </Row>
         </Grid>
-        <Grid className="footer">
+        <Grid fluid className="footer">
           <Row between="lg">
             <Col lg={4} md={4}>
               <a>Termos de uso</a>
