@@ -75,6 +75,58 @@ export default class AppComponent extends Component {
             </Col>
           </Row>
         </Grid>
+        <Grid fluid className="grid-funcionamento">
+          <Row>
+            <Col xs={12} md={12} lg={12} sm={12}>
+              <h1>Como funciona o quinto andar?</h1>
+            </Col>
+          </Row>
+          <Row className="sub-title">
+            <Col xs={12} md={12} lg={12} sm={12}>
+              <h2>Usamos tecnologia e design para simplificar a locação de imóveis residenciais.</h2>
+              <h2>Somos o jeito mais simples e seguro de alugar um imóvel.</h2>
+            </Col>
+          </Row>
+          <Row className="feature-list">
+            <Col xs={4} md={4} sm={4} xs={12}>
+              <Row>
+                <div></div>
+              </Row>
+              <Row>
+                <h1>Escolha e agende</h1>
+              </Row>
+              <Row>
+                <h3>Fotos de qualidade, busca pelo mapa e filtros exclusivos. Fácil de usar para não precisar falar com ninguém. Você mesmo agenda pelo site as suas visitas com os melhores corretores.</h3>
+              </Row>
+            </Col>
+            <Col xs={4} md={4} sm={4} xs={12}>
+              <Row>
+                <div></div>
+              </Row>
+              <Row>
+                <h1>Visite com os melhores</h1>
+              </Row>
+              <Row>
+                <h3>Corretores selecionados para garantir um atendimento bacana, fácil e eficaz. Visite os imóveis selecionados com quem sabe tudo sobre o lugar onde você quer morar.</h3>
+              </Row>
+            </Col>
+            <Col xs={4} md={4} sm={4} xs={12}>
+              <Row>
+                <div></div>
+              </Row>
+              <Row>
+                <h1>Alugue sem fiador</h1>
+              </Row>
+              <Row>
+                <h3>O seguro-fiança é por nossa conta. Você não precisa se preocupar em pedir ajuda pra ninguém, não precisa correr atrás de uma seguradora nem precisa depositar três meses de aluguel de uma vez. É mais fácil, e você não paga nada a mais por isso.</h3>
+              </Row>
+            </Col>
+          </Row>
+        </Grid>
+        <Grid className="grid-midia">
+          <Row >
+          </Row>
+        </Grid>
       </Grid>
     );
   }

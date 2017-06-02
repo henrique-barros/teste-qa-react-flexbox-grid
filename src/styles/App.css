@@ -132,6 +132,33 @@ input {
   border: 1px solid darkgray;
 }
 
+.grid-funcionamento {
+  margin-top: 40px;
+}
+
+.grid-funcionamento h2 {
+  margin: 0;
+}
+
+.grid-funcionamento .sub-title {
+  padding-bottom: 32px;
+  border-bottom: 1px solid darkgray;
+}
+
+.grid-funcionamento h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.grid-funcionamento .feature-list {
+  margin-top: 60px;
+}
+
+.grid-funcionamento .feature-list > * {
+  padding: 20px;
+}
+
 #App {
   padding: 0;
   margin: 0;
