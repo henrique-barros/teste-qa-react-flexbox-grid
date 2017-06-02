@@ -124,7 +124,36 @@ export default class AppComponent extends Component {
           </Row>
         </Grid>
         <Grid className="grid-midia">
-          <Row >
+          <Row>
+            <Col xs={12} sm={12} md={12} lg={12}>
+              <h3>O quinto andar na mídia</h3>
+            </Col>
+          </Row>
+          <Row className="row-news" around="lg" center="xs">
+            <Col xs={12} sm={4} md={3} lg={2}>
+              <a>
+                <div className="news-button exame">
+                </div>
+              </a>
+            </Col>
+            <Col xs={12} sm={4} md={3} lg={2}>
+              <a>
+                <div className="news-button infomoney">
+                </div>
+              </a>
+            </Col>
+            <Col xs={12} sm={4} md={3} lg={2}>
+              <a>
+                <div className="news-button estadao">
+                </div>
+              </a>
+            </Col>
+            <Col xs={12} sm={4} md={3} lg={2}>
+              <a>
+                <div className="news-button pegn">
+                </div>
+              </a>
+            </Col>
           </Row>
         </Grid>
       </Grid>
