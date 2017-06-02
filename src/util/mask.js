@@ -23,10 +23,6 @@ const getMaskedString = (value, mask) => {
   return applyMask(unmaskedString, mask);
 };
 
-const valueExcedesMaskLimit = (value, mask) => {
-  return value.length > mask.length;
-};
-
 const getUnmaskedString = (value, mask) => {
   if (!mask.includes("@")) {
     return value.replace(/\D/g,'');

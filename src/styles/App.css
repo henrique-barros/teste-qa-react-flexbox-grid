@@ -55,6 +55,7 @@ input {
 }
 
 .search-house-button {
+  text-indent: -9999px;
   float: left;
   width: 70px;
   height: 50px;
@@ -182,6 +183,45 @@ input {
   background-position: -480px 0;
 }
 
+.grid-navegacao {
+  background-color: #555555;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url(//d29k9pp6ge5sv1.cloudfront.net/searchStaticProducao/939/img/compressed/5a-logo.svg.gz);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: 300px 150px;
+}
+
+ul.naveg li.title {
+  margin-bottom: 2px;
+  list-style: none;
+  color: #999999;
+}
+
+ul.naveg li.title.mtop {
+  padding-top: 4px;
+}
+
+ul.naveg li {
+  font-weight: lighter;
+  margin-bottom: 6px;
+  list-style: none;
+  color: white;
+}
+
+.footer {
+  background-color: #333333;
+  color: #666666;
+}
+
+.footer div {
+  padding: 4px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+}
+
 #App {
   padding: 0;
   margin: 0;
@@ -205,5 +245,11 @@ input {
 @media (max-width: 768px) {
   .news-button {
     margin: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .grid-navegacao {
+    background-image: none;
   }
 }
