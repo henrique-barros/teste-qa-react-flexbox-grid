@@ -3,10 +3,15 @@ import '../styles/App.css';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import AppComponent from '../components/AppComponent';
 
 class App extends Component {
   render() {
     const { actions, phone } = this.props;
+    return (
+      <AppComponent />
+    );
+
     return (
       <Grid className="App" fluid>
         <Row>
