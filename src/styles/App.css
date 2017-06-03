@@ -282,14 +282,14 @@ ul.naveg li {
     background-position: 50% 0;
     background-repeat: no-repeat;
     background-size: 42px 22px;
+    margin-left: 12px;
   }
 
   .header-menu-mobile > * {
     float: right;
     color: white;
     font-size: 1.1em;
-    margin-left: 4px;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 0 5px 0;
     cursor: pointer;
     height: 50px;
     line-height: 5em;
