@@ -3,8 +3,23 @@ import '../styles/App.css';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 export default class AppComponent extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      shouldShowMenu: false
+    }
+  }
+
   render() {
     const { onPhoneChange, phone } = this.props;
+
+    const menuMobile = this.state.shouldShowMenu ? <div id="menu-mobile">Menu</div> : null;
+
+    const showHideMenu = () => {
+      console.log('aq')
+      this.setState({...this.state, shouldShowMenu: !this.state.shouldShowMenu});
+    };
+
     return (
       <Grid fluid className="App" id="App">
         <Grid fluid className="actions-grid">
@@ -17,6 +32,10 @@ export default class AppComponent extends Component {
                 <div className="header-menu-entrar">Entrar</div>
                 <div className="header-menu-favoritos">Favoritos</div>
                 <div className="header-menu-anunciar">Anunciar imóvel</div>
+              </div>
+              <div className="header-menu-mobile">
+                <div className="header-menu-mobile-menu" onClick={showHideMenu}>Menu</div>
+                <div className="header-menu-mobile-favoritos">Favoritos</div>
               </div>
             </Col>
           </Row>
@@ -69,7 +88,7 @@ export default class AppComponent extends Component {
           <Row>
             <Col lg={6} md={6} lgOffset={6} mdOffset={6} sm={12} xs={12}>
               <form className="request-app">
-                <input className="request-app-input" placeholder="Insira seu número" type="tel" value={phone}  onChange={(e) => onPhoneChange(e.target.value)}></input>
+                <input className="request-app-input" placeholder="Insira seu número" type="text" value={phone}  onChange={(e) => onPhoneChange(e.target.value)}></input>
                 <a className="request-app-button">Enviar link!</a>
               </form>
             </Col>
@@ -258,6 +277,7 @@ export default class AppComponent extends Component {
             </Col>
           </Row>
         </Grid>
+        {menuMobile}
       </Grid>
     );
   }

@@ -11,6 +11,7 @@ input {
   background-image: url(//d29k9pp6ge5sv1.cloudfront.net/searchStaticProducao/939/img/compressed/5a-logo.svg.gz);
   background-repeat: no-repeat;
   background-position: cover;
+  background-size: contain;
   width: 100%;
   height: 45px;
 }
@@ -22,6 +23,14 @@ input {
   margin-left: 16px;
   padding: 10px 20px 10px 20px;
   cursor: pointer;
+}
+
+.header-menu-mobile {
+  display: none;
+}
+
+.menu-mobile {
+  display: none;
 }
 
 .header-menu-entrar {
@@ -252,4 +261,57 @@ ul.naveg li {
   .grid-navegacao {
     background-image: none;
   }
+}
+
+@media (max-width: 942px) {
+  .header-menu {
+    display: none;
+  }
+  .header-menu-mobile {
+    display: inline;
+  }
+  .header-menu-mobile-favoritos {
+    background-image: url(//d29k9pp6ge5sv1.cloudfront.net/searchStaticProducao/939/img/compressed/5a-favoritos-new.svg.gz);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: 42px 22px;
+  }
+
+  .header-menu-mobile-menu {
+    background-image: url(//d29k9pp6ge5sv1.cloudfront.net/searchStaticProducao/939/img/compressed/5a-menu-branco.svg.gz);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: 42px 22px;
+  }
+
+  .header-menu-mobile > * {
+    float: right;
+    color: white;
+    font-size: 1.1em;
+    margin-left: 4px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    height: 50px;
+    line-height: 5em;
+  }
+
+  .menu-mobile {
+    display: block;
+    position: fixed;
+    float: right;
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    top: 0;
+    left: 20px;
+
+  }
+}
+
+@media (max-width: 432px) {
+  .header .logo  {
+    width: 90%;
+  }
+
+  
 }
